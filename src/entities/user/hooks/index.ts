@@ -1,0 +1,1 @@
+export { useGetUserProfileQuery } from './use-get-user-profile-query'

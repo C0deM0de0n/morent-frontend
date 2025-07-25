@@ -1,0 +1,1 @@
+export { PAGES_NAVIGATION } from './pages-navigation'
