@@ -16,14 +16,14 @@ export function Profile() {
 
 	if (isError || !profile) {
 		return (
-			<Link href={PAGES_NAVIGATION.DASHBOARD}>
-				<Button text='Sign In' />
+			<Link href={PAGES_NAVIGATION.LOGIN}>
+				<Button>Sign In</Button>
 			</Link>
 		)
 	}
 
 	return (
-		<div className='w-11 h-11 bg-[#3563E9] cursor-pointer rounded-full'>
+		<div className='relative w-11 h-11 bg-[#3563E9] cursor-pointer overflow-hidden rounded-full'>
 			<Avatar email={profile.email} picture={profile.picture} />
 		</div>
 	)

@@ -2,7 +2,8 @@ class NAVIGATION  {
 	private readonly main = '/'
 
 	public MAIN=this.main
-	public AUTHORIZATION=`${this.main}authorization`
+	public LOGIN=`${this.main}authorization/login`
+	public REGISTER=`${this.main}authorization/register`
 	public CATEGORY=`${this.main}category`
 	public CATEGORY_PRODUCT=`${this.CATEGORY}/product`
 	public PAYMENT=`${this.main}payment`

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
-import { Providers } from '@/shared/providers'
 import { Header } from '@/widgets/header/ui'
+import { Providers } from '@/shared/providers'
 import "@/shared/styles/globals.css"
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -13,18 +13,19 @@ export const metadata: Metadata = {
   description: process.env.NEXT_PROJECT_DESCRIPTION
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
   return (
     <html lang="en">
       <body
         className={plusJakartaSans.className}
       >
         <Providers>
-          <Header />
+            <Header />
           {children}
         </Providers>
       </body>

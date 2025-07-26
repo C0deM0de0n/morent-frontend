@@ -12,10 +12,10 @@ export const saveAccessTokenToCookie = (accessToken: string) => {
 		domain: process.env.DOMAIN,
 		sameSite: 'Strict',
 		secure: true,
-		expires: 1,
+		expires: new Date(Date.now() + 60 * 60 * 1000),
 	})
 }
 
 export const removeAccessTokenFromCookie = () => {
-	Cookie.remove(TokenType.ACCESS_TOKEN)
+		Cookie.remove(TokenType.ACCESS_TOKEN)
 }

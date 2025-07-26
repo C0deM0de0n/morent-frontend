@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig, type AxiosError, type CreateAxiosDefaults } from 'axios';
-import { tokenService } from '../services/tokenService';
+import { tokenService } from '../services';
 import { 
 	getAccessTokenFromCookie, 
 	removeAccessTokenFromCookie,
@@ -12,7 +12,7 @@ interface IAxiosRequestConfigAdditional extends AxiosRequestConfig {
 }
 
 const options: CreateAxiosDefaults = {
-	baseURL: 'http://localhost:4000',
+	baseURL: 'http://localhost:4000/api',
 	headers: {
 		'Content-Type': 'application/json'
 	},

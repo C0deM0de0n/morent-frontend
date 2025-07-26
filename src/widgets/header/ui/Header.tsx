@@ -5,9 +5,10 @@ import { Favorites } from './Favorites'
 import { Notification } from './Notification'
 import { Settings } from './Settings'
 
-export function Header() {
+export async function Header() {
+
 	return (
-		<header className='flex justify-center items-center w-full h-32 bg-white'>
+		<header className='fixed flex justify-center items-center w-full h-32 bg-white'>
 			<Container>
 				<div className='flex justify-between items-center'>
 					<Logo />

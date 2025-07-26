@@ -6,7 +6,6 @@ import type { IUser } from '../types';
 class UserService {
 	public async get(): Promise<AxiosResponse<IUser>> {
 		const response = await axiosWithAuth.get<IUser>('/user/profile')
-
 		if(response.data.accessToken) saveAccessTokenToCookie(response.data.accessToken)
 
 		return response
