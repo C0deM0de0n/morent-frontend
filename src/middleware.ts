@@ -8,8 +8,9 @@ export default async function middleware(request: NextRequest) {
 
 	const refreshToken = cookies.get(TokenType.REFRESH_TOKEN)?.value
 	const isAuthPage = url.includes('authorization')
-
+	console.log(refreshToken)
 	if(isAuthPage && refreshToken) {
+		console.log(refreshToken)
 		return NextResponse.redirect(new URL(PAGES_NAVIGATION.MAIN, url))
 	}
 

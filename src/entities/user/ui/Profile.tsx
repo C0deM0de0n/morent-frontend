@@ -23,7 +23,7 @@ export function Profile() {
 	}
 
 	return (
-		<div className='relative w-11 h-11 bg-[#3563E9] cursor-pointer overflow-hidden rounded-full'>
+		<div className='relative flex justify-center items-center w-11 h-11 bg-[#3563E9] cursor-pointer overflow-hidden rounded-full'>
 			<Avatar email={profile.email} picture={profile.picture} />
 		</div>
 	)

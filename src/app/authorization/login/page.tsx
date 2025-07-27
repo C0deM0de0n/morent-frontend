@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Login() {
 	return (
-		<section className='flex justify-center items-center w-full h-screen'>
+		<section className='flex justify-center items-center w-full h-screen pt-32'>
 			<AuthWrapper
 				heading='LOGIN'
 				description='Sign in to access your account using your email and password'
